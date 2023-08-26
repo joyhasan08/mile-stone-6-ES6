@@ -25,3 +25,6 @@ const aPerson = [{
 console.log(aPerson[0].names);
 console.log(aPerson[0].data[1].phone);
 console.log(aPerson[2].address.Home);
+
+//optional chaining 
+console.log(aPerson[2].address.newHome?/* ? */.Home);
