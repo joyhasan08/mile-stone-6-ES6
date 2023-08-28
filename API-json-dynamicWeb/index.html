@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <section>
+        <div>
+            <ul id="userDisplay" class="text-lg bg-blue-200 py-4 flex flex-col gap-4"><span class="font-bold text-blue-600">API data load here...</span></ul>
+            <button onclick="loadUserData()" class="btn btn-primary my-4 " >loda data </button>
+        </div>
+
+        <div>
+            
+            <div id="post-container" class=" p-2  gap-4 flex flex-col bg-blue-200" >
+                <h1 class="font-bold text-blue-600">Display all post</h1>
+            </div>
+            <button onclick="getUserPost ()" class=" my-2 btn btn-success"  >get photo</button>
+        </div>
+        
+      <div>
+        <h2><span class="font-medium text-lg" >users</span></h2>
+        <h3>post: title</h3>
+        <p>post</p>
+        
+      </div>
+        
+    </section>
+
+
+
+<!-- javascript -->
+
+    <script src="./fetch.js"></script>
+    <script src="./fetchPhoto.js"></script>
+</body>
+</html>
