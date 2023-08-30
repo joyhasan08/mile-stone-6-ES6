@@ -6,6 +6,11 @@
     <title>json</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .post{
+            gap: 10px;
+        }
+    </style>
 
 </head>
 <body>
@@ -17,10 +22,10 @@
 
         <div>
             
-            <div id="post-container" class=" p-2  gap-4 flex flex-col bg-blue-200" >
+            <div id="post-container" class=" grid  lg:grid-cols-3 gap-4 p-2   bg-blue-200" >
                 <h1 class="font-bold text-blue-600">Display all post</h1>
             </div>
-            <button onclick="getUserPost ()" class=" my-2 btn btn-success"  >get photo</button>
+            <button onclick="getUserPost ()" class=" my-2 btn btn-success"  >get post</button>
         </div>
         
       <div>

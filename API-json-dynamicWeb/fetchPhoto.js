@@ -14,9 +14,11 @@ function displayPost (posts){
         <h3><span class="font-medium text-lg" >Title:</span>  ${post.title}</h3>
         <p><span class="font-medium text-lg" >Post:</span> ${post.body}</p>
         `
-        div.classList.add(`bg-red-100`, `p-2`, `rounded-lg`)
+        div.classList.add(`bg-red-100`, `p-2`, `rounded-lg`,`w-[300px]`,`post`)
         postDiv.appendChild(div);
     }
     
 }
 // getUserPost();
+const stuInfo = JSON.stringify({ name: "James", roll: 3 }); 
+console.log(stuInfo.name); 
